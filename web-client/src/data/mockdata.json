@@ -1,0 +1,15 @@
+
+[
+  {
+    "id": 1,
+    "location": "Mountain View",
+    "activity": "Hiking",
+    "description": "Great spot for hiking!"
+  },
+  {
+    "id": 2,
+    "location": "Lake Tahoe",
+    "activity": "Boating",
+    "description": "Beautiful place for boating!"
+  }
+]

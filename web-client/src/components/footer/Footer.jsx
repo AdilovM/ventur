@@ -1,39 +1,41 @@
-import "./footer.css";
+// components/Footer.js
 
-const Footer = () => {
+import React from 'react';
+import './footer.css';
+
+function Footer() {
   return (
-    <div className="footer">
-      <div className="fLists">
-        <ul className="fList">
-          <li className="fListItem">Countries</li>
-          <li className="fListItem">Regions</li>
-          <li className="fListItem">Cities</li>
-          <li className="fListItem">Districts</li>
-
-        </ul>
-        <ul className="fList">
-          <li className="fListItem">AVT </li>
-          <li className="fListItem">Boats </li>
-          <li className="fListItem">Other Stuff </li>
-          <li className="fListItem">Some More Stuff</li>
-        </ul>
-        <ul className="fList">
-          <li className="fListItem">Some rare stuff</li>
-          <li className="fListItem">Reviews</li>
-          <li className="fListItem">Seasonal and holiday deals </li>
-        </ul>
-        <ul className="fList">
-          <li className="fListItem">About Us</li>
-          <li className="fListItem">Curtomer Service</li>
-          <li className="fListItem">Careers</li>
-          <li className="fListItem">Press center</li>
-          <li className="fListItem">Investor relations</li>
-          <li className="fListItem">Terms & conditions</li>
+    <footer className="footer">
+      {/* Footer sections */}
+      <div className="footer-section">
+        <h3>About</h3>
+        <ul>
+          <li>How Ventur works</li>
+          <li>Newsroom</li>
+          {/* ... */}
         </ul>
       </div>
-      <div className="fText">Copyright © 2023 Ventur.</div>
-    </div>
+
+      <div className="footer-section">
+        <h3>Community</h3>
+        <ul>
+          <li>Diversity & Belonging</li>
+          <li>Accessibility</li>
+          {/* ... */}
+        </ul>
+      </div>
+
+      {/* ... you can add more sections as needed */}
+
+      {/* Social media icons, copyright text, etc. */}
+      <div className="footer-bottom">
+        <div className="social-icons">
+          {/* Add social media icons or links here */}
+        </div>
+        <p>&copy; 2023 Ventur, Inc.</p>
+      </div>
+    </footer>
   );
-};
+}
 
 export default Footer;
